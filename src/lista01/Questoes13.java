@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Questoes13 {
 
 	public static void main(String[] args) {
-		//ok 
+		
 		
 		int A,B;
 		

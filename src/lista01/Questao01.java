@@ -4,9 +4,13 @@ import java.util.Scanner;
 
 public class Questao01 {
 
+	/* Aluno: Marden Yêgo.
+	 * Matrícula: 508371.
+	 */
+	
 	public static void main(String[] args) {
-		//ok 
-		//oo
+		
+		
 		int A,B;
 		
 		Scanner ler = new Scanner(System.in);

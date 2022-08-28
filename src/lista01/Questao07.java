@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Questao07 {
 
 	public static void main(String[] args) {
-		//ok
+		
 		
 		int A,B;
 		
