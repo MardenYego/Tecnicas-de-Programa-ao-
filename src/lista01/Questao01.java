@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Questao01 {
 
-	/* Aluno: Marden Yêgo.
+	/* Aluno: Marden Yêgo de Oliveira Freitas.
 	 * Matrícula: 508371.
 	 */
 	
