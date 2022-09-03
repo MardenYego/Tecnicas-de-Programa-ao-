@@ -9,7 +9,5 @@ public class Questao05 {
 		for(;i<=100;i+=3) {
 			System.out.println(i+"-");
 		}
-
 	}
-
 }
