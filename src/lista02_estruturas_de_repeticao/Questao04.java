@@ -6,6 +6,7 @@ public class Questao04 {
 		
 		int i=0;
 		
+		
 		for(;i<=100;i+=2) {
 			System.out.println(i+"-");
 		}
