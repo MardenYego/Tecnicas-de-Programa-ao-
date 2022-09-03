@@ -34,7 +34,7 @@ public class Questao12 {
 	
 	
 	public static void alternativaC(char matriz[][],int i,int j,int linhas,int colunas) {
-		System.out.println("Letra (c)");
+		System.out.println("Letra (C)");
 		for(i=0;i<linhas;i++) {
 			for(j=0;j<colunas;j++) {
 				matriz[i][j]='*';
