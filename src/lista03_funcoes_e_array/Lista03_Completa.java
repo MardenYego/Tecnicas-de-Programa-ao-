@@ -5,7 +5,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Lista03_Completa {
-	
 	/* Aluno: Marden Yêgo de Oliveira Freitas.
 	 * Matrícula: 508371.
 	 */
