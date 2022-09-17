@@ -5,9 +5,13 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Lista03_Completa {
-
-
+	
+	/* Aluno: Marden Yêgo de Oliveira Freitas.
+	 * Matrícula: 508371.
+	 */
+	
 	public static void leituraVetor(int vetor[],int i) {
+		
 		Scanner ler= new Scanner(System.in);
 		
 		System.out.println("Informe os elementos do seu vetor de tamanho 10:");
@@ -18,6 +22,7 @@ public class Lista03_Completa {
 	
 	
 	public static int pesquisa(int valor1,int vetor[],int i) {
+		
 		for(i=0;i<vetor.length;i++) {
 			if(vetor[i]==valor1)
 				return 1;
@@ -27,6 +32,7 @@ public class Lista03_Completa {
 	
 	
 	public static int pesquisaPorIndice(int indice,int vetor[],int i) {
+		
 		for(i=0;i<vetor.length;i++) {
 			if(i==indice)
 				return vetor[i];
@@ -36,6 +42,7 @@ public class Lista03_Completa {
 	
 	
 	public static int[] separacaoDeValores(int vetor[],int i) {
+		
 		int auxiliar=0;
 		
 		for(int j=0;j<vetor.length;j++) {
@@ -52,6 +59,7 @@ public class Lista03_Completa {
 	
 	
 	public static int somatorio(int vetor[],int i) {
+		
 		int somaElementos=0;
 		for(i=0;i<vetor.length;i++) {
 			somaElementos+=vetor[i];
@@ -61,6 +69,7 @@ public class Lista03_Completa {
 	
 	
 	public static void juncao(int vetorPrincipal[],int i) {
+		
 		int[] primeiroVetor=new int[10];
 		int[] segundoVetor=new int[10];
 		
@@ -74,7 +83,7 @@ public class Lista03_Completa {
 	}                                  
 	
 	
-	public static int[] inversaoOrdem(int vetor[],int i){
+	public static int[] inversaoOrdem(int vetor[],int i) {
 
 		int[] vetorSecundario=new int[10];
 		
@@ -86,6 +95,7 @@ public class Lista03_Completa {
 	
 
 	public static void inversaoVetores(int vetorAuxiliar[],int i) {
+		
 		int[] primeiroVetor=new int[10];
 		int[] segundoVetor=new int[10];
 		
@@ -97,13 +107,14 @@ public class Lista03_Completa {
 			primeiroVetor[i]=segundoVetor[i];
 			segundoVetor[i]=vetorAuxiliar[i];
 		}
-		//*
+		
 		System.out.println(Arrays.toString(primeiroVetor));
 		System.out.println(Arrays.toString(segundoVetor));
 	}
 	
 	
 	public static int[] priorizacao(int vetor[],int i) {
+		
 		int[] vetorSecundario=new int[10];
 		int mediaSecundaria=somatorio(vetorSecundario,i)/10;
 		
@@ -117,13 +128,11 @@ public class Lista03_Completa {
 	
 	
 	public static void compactacao(int vetor[],int i) {
+		
 		int[] vetorBinario = {0,1};
 		int contador=0;
 		
 			for(i=0;i<vetor.length;i++) {
-				
-			//primeiro esbolço;	
-				
 			//	if(vetor[i]==vetorBinario[0]) {	
 					if(vetor[i]==vetorBinario[0]) {
 						contador++;
@@ -138,24 +147,12 @@ public class Lista03_Completa {
 						System.out.println(vetorBinario[1]+"-"+contador);
 						contador=0;
 					}
-				//}
-					
-					if(vetor[i]==vetorBinario[0]) {
-						contador++;
-					} else {
-						System.out.println(vetorBinario[0]+"-"+contador);
-						contador=0;
-					}
-					
-					if(vetor[i]==vetorBinario[1]) {
-						contador++;
-						
-					}
 			}
 	}
 	
 	
 	public static void entradaCriptografica(String[] vetorFrase,int i ) {
+		
 		Scanner ler= new Scanner(System.in);
 		
 		System.out.println("Informe uma pequena frase na qual deseja criptografa-lá:");
@@ -167,6 +164,7 @@ public class Lista03_Completa {
 	
 	
 	public static String[] criptografia(String vetorFrase[],int i) {
+		
 		String[] vetorCriptografico={"a","b","c","d","e","f","g",
 									 "h","i","j","l","m","n","o","p",
 									 "q","r","s","t","u","v","x","z",
@@ -203,7 +201,7 @@ public class Lista03_Completa {
 	}
 	
 	
-	public static void complementacao(int i) {
+	public static int[] complementacao(int i) {
 		
 		int[] primeiroVetor=new int[10];
 		int[] segundoVetor=new int[10];
@@ -217,8 +215,7 @@ public class Lista03_Completa {
 			verificador=primeiroVetor[i]+segundoVetor[i];
 			vetorResultante[i]=10-(verificador);
 		}
-		//*
-		System.out.println(Arrays.toString(vetorResultante));
+		return vetorResultante;
 	}
 	
 	
@@ -270,10 +267,9 @@ public class Lista03_Completa {
 	
 	
 	public static void diferencaA(int i) {
-		//incompleto
+		
 		int[] primeiroVetor=new int[10];
 		int[] segundoVetor=new int[10];
-		
 		int auxiliar;
 		
 		leituraVetor(primeiroVetor,i);
@@ -295,10 +291,6 @@ public class Lista03_Completa {
 	
 	public static void main(String[] args) {
 		
-		/* Aluno: Marden Yêgo de Oliveira Freitas.
-		 * Matrícula: 508371.
-		 */
-		
 		int i=0;
 		int[] vetor= new int[10];
 		
@@ -318,6 +310,7 @@ public class Lista03_Completa {
 		
 		
 		if(numeroOperacao==1) {
+			
 			//pesquisa
 			int elemento;
 			
@@ -332,6 +325,7 @@ public class Lista03_Completa {
 		
 		
 		if(numeroOperacao==2) {
+			
 			//Pesquisa por índice
 			int indice,elementoIndice;
 			
@@ -347,6 +341,7 @@ public class Lista03_Completa {
 		
 		
 		if(numeroOperacao==3) {
+			
 			//Separação de valores positivos e valores negativos
 			leituraVetor(vetor,i);
 			System.out.println(Arrays.toString(separacaoDeValores(vetor,i)));
@@ -354,6 +349,7 @@ public class Lista03_Completa {
 		
 		
 		if(numeroOperacao==4) {
+			
 			//Somatório
 			leituraVetor(vetor,i);
 			System.out.println("O somatório dos valores do vetor informado é:"+somatorio(vetor,i));
@@ -361,6 +357,7 @@ public class Lista03_Completa {
 		
 		
 		if(numeroOperacao==5) {
+			
 			//Junção de vetor
 			int[] vetorPrincipal=new  int[20];
 			
@@ -370,109 +367,108 @@ public class Lista03_Completa {
 		
 		
 		if(numeroOperacao==6) {
+			
 			//Inversão de ordem
 			leituraVetor(vetor,i);
 			System.out.println(Arrays.toString(inversaoOrdem(vetor,i)));
-			
 		}
 		
 		
 		if(numeroOperacao==7) {
+			
 			//Inversão de vetores
 			int[] vetorCompleto=new int[10];
 			inversaoVetores(vetorCompleto,i);
-			
 		}
 		
 		
 		if(numeroOperacao==8) {
+			
 			//Priorização
-			// +/-
 			leituraVetor(vetor,i);
 			System.out.println(Arrays.toString(priorizacao(vetor,i)));
-			
 		}
 		
 		
 		if(numeroOperacao==9) {
-			//Compactação
 			
+			//Compactação
 			//incompleta
-		leituraVetor(vetor,i);
-		compactacao(vetor,i);
-		System.out.println();
+			leituraVetor(vetor,i);
+			compactacao(vetor,i);
 		}
 	
 		
 		if(numeroOperacao==10) {
-			//Descompactação
 			
-			//incompleta
+			//Descompactação
+			//Não concluida
 		}
 		
 		
 		if(numeroOperacao==11) {
+			
 			//Criptografia
 			String[] vetorFrase= new String[10];
 			
 			System.out.println(Arrays.toString(criptografia(vetorFrase,i)));
-			
 		}
 		
 		
 		if(numeroOperacao==12) {
-			//Descritografia
 			
+			//Descritografia
+			//Não concluida
 		}
 		
 		
 		if(numeroOperacao==13) {
-			//Contagem de caracteres
 			
+			//Contagem de caracteres
+			//Não concluida
 			//leituraCaractere(vetor,i);
 			//contagemCaracteres(vetor,i);
 		}
 		
 		
 		if(numeroOperacao==14) {
-			//Complementação:
 			
-			complementacao(i);
+			//Complementação:
+			System.out.println(Arrays.toString(complementacao(i)));
 		}
 		
 		
 		if(numeroOperacao==15) {
+			
 			//Polarização
-			
 			System.out.println(Arrays.toString(polarizacao(vetor,i)));
-			
 		}
 		
 		
 		if(numeroOperacao==16) {
+			
 			//Explosão
-			
-			
+			//Não concluida
 		}
 		
 		
 		if(numeroOperacao==17) {
+			
 			//Organização
 			leituraVetor(vetor,i);
 			organizacao(vetor,i);
-				
 		}
 		
 		
 		if(numeroOperacao==18) {
-			//Agrupamento:
 			
-			leituraVetor(vetor,i);
+			//Agrupamento
+			//Não concluida
 		}
 		
 		if(numeroOperacao==19) {
-			//Diferença-A
 			
+			//Diferença-A
 			diferencaA(i);
 		}
 	}
