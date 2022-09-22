@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Questao05 {
 
-	public static void numAleatorios(int array[], int i) {
+	public static void numAleatorios(double array[], int i) {
 		//int numeros=0;
 //		for(i=0;i<array.length;i++) {
 //			numeros=(int)((Math.random()*100)-30);
@@ -19,8 +19,8 @@ public class Questao05 {
 	}
 	
 	
-	public static int somaArray(int array[], int i) {
-		int somatorio=0;
+	public static double somaArray(double array[], int i) {
+		double somatorio=0;
 		for(i=0;i<array.length;i++) {
 			somatorio+=array[i];
 		}
@@ -28,7 +28,7 @@ public class Questao05 {
 	}
 	
 	
-	public static double produtoArray(int array[], int i) {
+	public static double produtoArray(double array[], int i) {
 		double produto=1;
 		for(i=0;i<array.length;i++) {
 			produto*=array[i];
@@ -47,11 +47,11 @@ public class Questao05 {
 	
 	public static void main(String[] args) {
 		
-		int[] array = new int [10];
-		int[] arraySoma =new int[4];
+		double[] array = new double[10];
+		double[] arraySoma =new double[4];
 		double[] arrayProduto = new double[4];
-		int[] arrayMedias = new int[4];
-		int i,somatorioTotal;
+		double[] arrayMedias = new double[4];
+		int i;
 
 		for(i=1;i<=3;i++) {
 			numAleatorios(array,i);
@@ -70,8 +70,8 @@ public class Questao05 {
 		System.out.println("Array com todas as médias computadas:"+Arrays.toString(arrayMedias));
 		
 		System.out.println("\nA soma do array que contém todas as somas calculadas:"+somaArray(arraySoma,i));
-		System.out.println("O produto do array que contém todos os produtos calculados:"+produtoArray());
-		System.out.println("A média do array que contém todas as médias calculadas"+); 
+		System.out.println("O produto do array que contém todos os produtos calculados:"+produtoArray(arrayProduto,i));
+		System.out.println("A média do array que contém todas as médias calculadas"+somaArray(arrayMedias,i)/3); 
 		
 	}
 
