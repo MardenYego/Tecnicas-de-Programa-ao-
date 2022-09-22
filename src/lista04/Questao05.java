@@ -13,7 +13,7 @@ public class Questao05 {
 //		}
 		Random aleatorio=new Random();
 		for(i=0;i<array.length;i++) {
-			array[i]=aleatorio.nextInt(20);
+			array[i]=aleatorio.nextInt(10);
 			
 		}
 	}
@@ -33,32 +33,45 @@ public class Questao05 {
 		for(i=0;i<array.length;i++) {
 			produto*=array[i];
 		}
-		System.out.println("");
 		return produto;
 	}
 	
-
+//	public static double leituraArray(double array[]) {
+//		
+//		for(int j=1;j<array.length;j++) {
+//			
+//		}
+//		return
+//	}
 	
 	
 	public static void main(String[] args) {
 		
 		int[] array = new int [10];
-		int[] arrayTotal =new int[3];
+		int[] arraySoma =new int[4];
+		double[] arrayProduto = new double[4];
+		int[] arrayMedias = new int[4];
 		int i,somatorioTotal;
 
 		for(i=1;i<=3;i++) {
 			numAleatorios(array,i);
 			System.out.println("\nArray: "+i);
 			System.out.println(Arrays.toString(array));
-			
-			//arrayTotal[i]=somaArray(array,i);
-			System.out.println("Soma dos elementos do array:"+somaArray(array,i));
-			System.out.println("Produto dos elementos do array:"+produtoArray(array,i));
-			System.out.println("Média dos elementos do vetor:"+somaArray(array,i)/10);
-			
-			somaArray(array,i);
+			arraySoma[i]=somaArray(array,i);
+			System.out.println("Soma dos elementos do array:"+arraySoma[i]);
+			arrayProduto[i]=produtoArray(array,i);
+			System.out.println("Produto dos elementos do array:"+arrayProduto[i]);
+			arrayMedias[i]=somaArray(array,i)/10;
+			System.out.println("Média dos elementos do vetor:"+arrayMedias[i]);
 		}
 		
+		System.out.println("\nArray com todas as somas computadas:"+Arrays.toString(arraySoma));
+		System.out.println("Array com todos os produtos computados:"+Arrays.toString(arrayProduto));
+		System.out.println("Array com todas as médias computadas:"+Arrays.toString(arrayMedias));
+		
+		System.out.println("\nA soma do array que contém todas as somas calculadas:"+somaArray(arraySoma,i));
+		System.out.println("O produto do array que contém todos os produtos calculados:"+produtoArray());
+		System.out.println("A média do array que contém todas as médias calculadas"+); 
 		
 	}
 
