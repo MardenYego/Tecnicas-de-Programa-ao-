@@ -38,8 +38,6 @@ public class Cliente {
 		return CPF;
 	}
 
-//	public void setCPF(String cPF) {
-//		CPF = cPF;
-//	}
+
 	
 }
