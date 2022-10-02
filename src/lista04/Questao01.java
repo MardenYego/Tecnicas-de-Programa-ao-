@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Questao01 {
 
 	public static void main(String[] args) {
-	
 		Scanner entrada = new Scanner(System.in);
 		
 		float salarioMinimo,taxaImposto, salarioFuncionario;
@@ -18,10 +17,7 @@ public class Questao01 {
 		System.out.println("Por fim, informe o salário do funcionário e sua taxa de imposto respectivamente:");
 		salarioFuncionario=entrada.nextFloat();
 		taxaImposto=entrada.nextFloat();
-		 
-	
-		
-		
+
 
 	}
 
