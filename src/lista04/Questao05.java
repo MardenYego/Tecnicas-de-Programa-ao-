@@ -13,7 +13,6 @@ public class Questao05 {
 		}
 	}
 	
-	
 	public static double somaArray(double array[], int i) {
 		double somatorio=0;
 		for(i=0;i<array.length;i++) {
@@ -21,7 +20,6 @@ public class Questao05 {
 		}
 		return somatorio;
 	}
-	
 	
 	public static double produtoArray(double array[], int i) {
 		double produto=1;

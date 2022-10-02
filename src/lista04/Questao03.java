@@ -1,7 +1,6 @@
 package lista04;
 
 import java.util.Arrays;
-//import java.util.Random;
 
 public class Questao03 {
 
