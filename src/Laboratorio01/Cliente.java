@@ -8,7 +8,7 @@ public class Cliente {
 	
 	
 	public Cliente(String CPF) {
-		this.CPF = CPF;
+		setId(id);
 	}
 	
 	public int getId() {
@@ -18,19 +18,14 @@ public class Cliente {
 	public void setId(int id) {
 		if(id>0)
 			this.id = id;
-		else
-			System.out.println("Número inválido");;
 	}
+	
 	public String getNome() {
 		return nome;
 	}
 	
 	public void setNome(String nome) {
-		int auxiliar=0;
-		for(int i=0;i<nome.length();i++) {
-			auxiliar++;
-		}
-		if(auxiliar>=3)
+		if(nome.length()>=3)
 			this.nome = nome;
 	}
 	
@@ -38,6 +33,6 @@ public class Cliente {
 		return CPF;
 	}
 
-
+	
 	
 }

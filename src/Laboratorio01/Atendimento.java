@@ -7,51 +7,64 @@ public class Atendimento {
 	
 	private Cliente cliente;
 	private Calendar data;
-	private ArrayList<Servico>listadeServico = new ArrayList<Servico>();
-	
+	private Cabeleireiro cabeleireiro;
+			//tipo   tipo-objetos nome
+	private ArrayList<Servico>listaDeServico;
+	//= new ArrayList<Servico>();
 	
 	Calendar calendar = Calendar.getInstance();
 
 
-	public Cliente getCliente() {
-		return cliente;
+	private Atendimento(Cliente cliente, Cabeleireiro cabeleireiro) {
+		this.cliente=cliente;
+		this.data=Calendar.getInstance();
+		this.cabeleireiro=cabeleireiro;
+		listaDeServico=new ArrayList<Servico>();
+	}
+	
+//	
+//	public Cliente getCliente() {
+//		return cliente;
+//	}
+//
+//
+//	public void setCliente(Cliente cliente) {
+//		this.cliente = cliente;
+//	}
+
+//
+//	public Calendar getdata() {
+//		return data;
+//	}
+//
+//
+//	public void setdata(Calendar data) {
+//		this.data = data;
+//	}
+
+
+//	public ArrayList<Servico> getListaDeServico() {
+//		return listaDeServico;
+//	}
+
+
+	public void setListaDeServico(ArrayList<Servico> listaDeServico) {
+		this.listaDeServico = listaDeServico;
 	}
 
-
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
+	public void addServico(Servico serv) {
+		this.listaDeServico.add(serv);
 	}
 
-
-	public Calendar getdata() {
-		return data;
-	}
-
-
-	public void setdata(Calendar data) {
-		this.data = data;
-	}
+//	public Calendar getData() {
+//		return data;
+//	}
 
 
-	public ArrayList<Servico> getListadeServico() {
-		return listadeServico;
-	}
-
-
-	public void setListadeServico(ArrayList<Servico> listadeServico) {
-		this.listadeServico = listadeServico;
-	}
-
-
-	public Calendar getData() {
-		return data;
-	}
-
-
-	public void setData(Calendar data) {
-		data = data;
-	}
-			
+//	public void setData(Calendar data) {
+//		data = data;
+//	}
+//			
 	
 	
 	

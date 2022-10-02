@@ -31,15 +31,6 @@ public class Questao05 {
 		return produto;
 	}
 	
-//	public static double leituraArray(double array[]) {
-//		
-//		for(int j=1;j<array.length;j++) {
-//			
-//		}
-//		return
-//	}
-	
-	
 	public static void main(String[] args) {
 		
 		double[] array = new double[10];

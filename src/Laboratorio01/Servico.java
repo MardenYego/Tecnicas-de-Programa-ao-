@@ -15,8 +15,6 @@ public class Servico {
 	public void setId(int id) {
 		if(id>0)
 			this.id = id;
-		else
-			System.out.println("Id inválido");
 	}
 	
 	public String getNome() {
@@ -24,11 +22,7 @@ public class Servico {
 	}
 	
 	public void setNome(String nome) {
-		int auxiliar=0;
-		for(int i=0;i<nome.length();i++) {
-			auxiliar++;
-		}
-		if(auxiliar>=5)
+		if(nome.length()>=5)
 			this.nome = nome;
 	}
 	
@@ -37,10 +31,8 @@ public class Servico {
 	}
 	
 	public void setValor(float valor) {
-		if(valor<0)
-			System.out.println("valor inválido");
-		else
-			this.valor = valor;
+		if(valor>=0)
+			this.valor=valor;
 	}
 	
 	public String getDescricao() {
@@ -48,11 +40,7 @@ public class Servico {
 	}
 	
 	public void setDescricao(String descricao) {
-		int auxiliar=0;
-		for(int i=0;i<nome.length();i++) {
-			auxiliar++;
-		}
-		if(auxiliar>=10)
+		if(descricao.length()>=10)
 			this.descricao = descricao;
 	}
 	
