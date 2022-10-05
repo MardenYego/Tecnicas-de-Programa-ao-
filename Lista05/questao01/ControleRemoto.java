@@ -1,4 +1,4 @@
-package lista05;
+package questao01;
 
 public class ControleRemoto {
 	
@@ -35,13 +35,6 @@ public class ControleRemoto {
 			canal--;
 		return canal;
 	}
-	
-	public int statusControle() {
-		
-	}
-	
-	
-	
 	
 	
 	//Apenas valores;

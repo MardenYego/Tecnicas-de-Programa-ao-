@@ -1,4 +1,4 @@
-package lista05;
+package questao01;
 
 import java.util.Scanner;
 
@@ -12,9 +12,11 @@ public class Main {
 		
 		
 		while (true) {
+			System.out.println("---------------------");
 			System.out.println("O que deseja fazer?");
 			System.out.println("Aumentar volume:1\nDiminuir volume:2\nPróximo canal:3\n"
 					+ "Canal anterior:4\nStatus do controle:5\n");
+			System.out.println("---------------------\n");
 			int opcao=entrada.nextInt();
 			
 			if(opcao==1) {
@@ -34,9 +36,9 @@ public class Main {
 			}
 			
 			if(opcao==5) {
-				
+				System.out.println(">>canal selecionado:"+controle.getCanal()+"\n>>volume selecionado:"+controle.getVolume());
 			}
-		
+					
 		}
 	}
 
