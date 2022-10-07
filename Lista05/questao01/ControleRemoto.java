@@ -2,7 +2,6 @@ package questao01;
 
 public class ControleRemoto {
 	
-	private boolean estado;
 	private int volume;
 	private int canal;
 	
@@ -36,8 +35,7 @@ public class ControleRemoto {
 		return canal;
 	}
 	
-	
-	//Apenas valores;
+
 	public int getVolume() {
 		return volume;
 	}
@@ -50,7 +48,5 @@ public class ControleRemoto {
 	public void setCanal(int canal) {
 		this.canal = canal;
 	}
-	
-	
 	
 }

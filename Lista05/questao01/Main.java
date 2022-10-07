@@ -10,7 +10,6 @@ public class Main {
 		Scanner entrada = new Scanner(System.in);
 		ControleRemoto controle = new ControleRemoto(1);
 		
-		
 		while (true) {
 			System.out.println("---------------------");
 			System.out.println("O que deseja fazer?");
@@ -37,9 +36,7 @@ public class Main {
 			
 			if(opcao==5) {
 				System.out.println(">>canal selecionado:"+controle.getCanal()+"\n>>volume selecionado:"+controle.getVolume());
-			}
-					
+			}	
 		}
 	}
-
 }
