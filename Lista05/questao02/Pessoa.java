@@ -8,7 +8,6 @@ public class Pessoa {
 	private int ano;
 	private String nome;
 	
-	
 	//public int calcularIdade(int data) {
 		
 		//return 
