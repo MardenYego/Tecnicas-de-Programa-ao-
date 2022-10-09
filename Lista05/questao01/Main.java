@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Main {
 
+	/* Aluno: Marden Yêgo de Oliveira Freitas.
+	 * Matrícula: 508371.
+	 */
+	 
 	public static void main(String[] args) {
 		
 		
