@@ -7,20 +7,19 @@ public class Chute {
 	private int quadrante;
 	private int posicaoX;
 	private int posicaoY;
+
 	
-	Random aleatorio = new Random();
-	
-//	public Chute() {
-//	 setPosicaoX(aleatorio.nextInt(10));
-//	 setPosicaoY(aleatorio.nextInt(18));
-//	 
-//	}
-	
-	public void chutar() {
+	public Chute() {
+		Random aleatorio = new Random();
 		
+		//setQuadrante();
+//	 	setPosicaoX(aleatorio.nextInt(10));
+//	 	setPosicaoY(aleatorio.nextInt(18));
+	 
 	}
 	
 	
+
 	public int getForca() {
 		return forca;
 	}

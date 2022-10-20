@@ -1,25 +1,21 @@
 package prova01;
 
+
+
 public class Gol {
 	
-	private Goleiro goleiro;
-	private Chute chute;
-	//private Posicao posicao;
+	//!!Deixar comentado por enquanto; 
+//	private Goleiro goleiro;
+//	private Chute chute;
+	private Posicao posicao;
 	
 	int linhas=9,colunas=17;
 	Posicao[][] ArrayGol= new Posicao[linhas][colunas]; 
 
 	
-	//Posicao posicao1;
-	// Dúvida se faço o mapeamento do gol com números ou caracteres / trave:'T',
-	//gol:dividido em quadrantes:'1','2','3','4'
-	//
 	
-	//Posicao posicao1;
-	
-	//Posicao posicao1;
-	
-	public void preencherGol() {
+	//transforma em um construtor
+	public Gol(){
 		Posicao posicao1;
 		for (int i=0;i<linhas;i++) {
 			for(int j=0;j<colunas;j++) {
@@ -27,6 +23,42 @@ public class Gol {
 			}
 		}
 	}
+	
+	
+	public void verificarChute(int x,int y) {
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	// Códigos para testes:
+	
+	
 	
 	public void preencherTraves() {
 		
@@ -52,8 +84,11 @@ public class Gol {
 				}	
 			}
 		}
+		ArrayGol[2][2].setTipo("g");
+		ArrayGol[2][14].setTipo("g");
+		//teste
+		//ArrayGol[2][2].setTipo("#");
 	}
-	
 	
 	
 	public void preenncherGavetas() {

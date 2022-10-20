@@ -6,25 +6,16 @@ public class Posicao {
 	private int quantidadeDefesas;
 	private int quantidadesBolasFora; 
 	private String tipo;
-	private int id;
+	//private int id;
 	
-	//private int quandrante; falta os sets e gets
-	
-//	public Posicao(int id) {
-//		setId(id);
+
+//	public int getId() {
+//		return id;
 //	}
-//	
-
-
-	
-	
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
+//
+//	public void setId(int id) {
+//		this.id = id;
+//	}
 
 	public String getTipo() {
 		return tipo;
@@ -47,12 +38,4 @@ public class Posicao {
 		if(quantidadeDefesas>=0)
 			this.quantidadeDefesas = quantidadeDefesas;
 	}
-	
-	
-	
-		
-	
-	
-	
-	
 }

@@ -11,9 +11,10 @@ public class Goleiro {
 	private int forca;
 	private int equilibrio;
 	
-	Chute chute;
-	public Goleiro(int id, String nome ) {
-		
+	
+	public Goleiro(int id, String nome) {
+		setId(id);
+		setNome(nome);
 	}
 	
 	public int AreaAtuacaoG () {
