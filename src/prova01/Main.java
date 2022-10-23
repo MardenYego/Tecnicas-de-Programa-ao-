@@ -4,6 +4,11 @@ import java.util.Random;
 
 public class Main {
 
+	
+	/* Aluno: Marden Yêgo de Oliveira Freitas.
+	 * Matrícula: 508371.
+	 */
+	
 	public void carregarChutes() {
 		
 		Random aleatorio=new Random();
@@ -52,7 +57,8 @@ public class Main {
 				
 	}
 	
-
+	
+	
 	public static void main(String[] args) {
 		
 		Main main = new Main();
