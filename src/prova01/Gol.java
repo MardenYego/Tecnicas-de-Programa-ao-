@@ -1,20 +1,14 @@
 package prova01;
 
-
-
 public class Gol {
 	
-	//!!Deixar comentado por enquanto; 
-//	private Goleiro goleiro;
-//	private Chute chute;
+	private Selecao selecao;
 	private Posicao posicao;
 	
 	int linhas=9,colunas=17;
 	Posicao[][] ArrayGol= new Posicao[linhas][colunas]; 
 
 	
-	
-	//transforma em um construtor
 	public Gol(){
 		Posicao posicao1;
 		for (int i=0;i<linhas;i++) {
@@ -25,46 +19,11 @@ public class Gol {
 	}
 	
 	
-	public void verificarChute(int x,int y) {
-		
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	// Códigos para testes:
-	
-	
-	
+	// Códigos para testes
 	public void preencherTraves() {
 		
 		for (int i=0;i<linhas;i++) {
 			for(int j=0;j<colunas;j++) {
-				//ArrayGol[i][j]=new Posicao();
 				if((i==1) && ((j<=15) && (j>=1))) {
 					ArrayGol[i][j].setTipo("T");
 				}else if(((i<=8) && (i>=1)) && (j==1)) {
@@ -86,22 +45,9 @@ public class Gol {
 		}
 		ArrayGol[2][2].setTipo("g");
 		ArrayGol[2][14].setTipo("g");
-		//teste
-		//ArrayGol[2][2].setTipo("#");
 	}
 	
-	
-	public void preenncherGavetas() {
-		for(int i=0;i<linhas;i++) {
-			for(int j=0;j<colunas;j++) {
-				if(i==2 && j==2)
-					ArrayGol[i][j].setTipo("g");
-				if(i==2 && j==14)
-					ArrayGol[i][j].setTipo("g");
-			}	
-		}	
-	}
-	
+	//teste de impressão
 	public void imprimir() {
 		for(int i=0;i<linhas;i++) {
 			for(int j=0;j<colunas;j++) {
@@ -110,6 +56,4 @@ public class Gol {
 			System.out.println();
 		}
 	}
-	
-	
 }

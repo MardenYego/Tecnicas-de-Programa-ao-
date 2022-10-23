@@ -11,11 +11,20 @@ public class Goleiro {
 	private int forca;
 	private int equilibrio;
 	
-	
 	public Goleiro(int id, String nome) {
 		setId(id);
 		setNome(nome);
 	}
+	
+	public void preencherValores(int velocidade, int flexibilidade, int agilidade, int coordenação, int forca, int equilibrio ) {
+		setVelocidade(velocidade);
+		setFlexibilidade(flexibilidade);
+		setAgilidade(agilidade);
+		setCoordenacao(coordenação);
+		setForca(forca);
+		setEquilibrio(equilibrio);
+	}
+	
 	
 	public int AreaAtuacaoG () {
 		int AAG=((getVelocidade()*3)+(getFlexibilidade()*2)+(getAgilidade()*3)+(getCoordenacao()*2)+(getForca())+(getEquilibrio()*2))/8;
@@ -23,23 +32,7 @@ public class Goleiro {
 		return AAG;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	public int getId() {
 		return id;
 	}

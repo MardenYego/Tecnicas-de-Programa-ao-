@@ -2,8 +2,6 @@ package prova01;
 
 public class TesteMatriz {
 
-	
-	
 	public static void main(String[] args) {
 		int linhas=8;
 		int colunas=10;
@@ -24,7 +22,6 @@ public class TesteMatriz {
 
 		
 		System.out.println("================================================================");
-		//Funcionando!!! 
 		int aux=0;
 		for(int j=0;j<6;j++) {
 			for(int i=7;i>=5 && aux<14;i--) {

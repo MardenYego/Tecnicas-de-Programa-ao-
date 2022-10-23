@@ -6,17 +6,8 @@ public class Posicao {
 	private int quantidadeDefesas;
 	private int quantidadesBolasFora; 
 	private String tipo;
-	//private int id;
 	
-
-//	public int getId() {
-//		return id;
-//	}
-//
-//	public void setId(int id) {
-//		this.id = id;
-//	}
-
+	
 	public String getTipo() {
 		return tipo;
 	}
