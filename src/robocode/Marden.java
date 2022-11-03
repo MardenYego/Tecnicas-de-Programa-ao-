@@ -2,7 +2,6 @@ package robocode;
 
 
 import java.awt.Color;
-
 import robocode.AdvancedRobot;
 import robocode.HitRobotEvent;
 import robocode.HitWallEvent;
@@ -13,7 +12,7 @@ import robocode.ScannedRobotEvent;
 public class Marden extends AdvancedRobot {
 
 	public void run() { 
-		setColors(Color.LIGHT_GRAY,Color.DARK_GRAY,Color.orange);
+		setColors(Color.darkGray,Color.darkGray,Color.orange);
 	
 	
 		while (true) {
